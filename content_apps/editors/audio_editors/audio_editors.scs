@@ -1,0 +1,10 @@
+section_of_audio_editors
+    =>nrel_main_idtf:[Раздел. Аудиоредакторы] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Section. Audio editors] (* <-lang_en;;*);
+
+<-atomic_section;;/*При декомпозиции удалить 2 запятую*/
+
+/*=> nrel_section_decomposition:	
+concept;
+concept;;*/
+

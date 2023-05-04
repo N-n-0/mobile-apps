@@ -1,0 +1,15 @@
+subject_domain_of_content_apps
+    =>nrel_main_idtf:[Предметная область контентных приложений] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Subject domain of content apps] (* <-lang_en;;*);
+
+<-subject_domain;
+
+=>nrel_private_subject_domain:
+    section_of_apps_for_health;
+	section_of_books_and_references;
+	section_of_editors;
+    section_of_finance_apps;
+    section_of_information_apps;
+    section_of_music_players;
+    section_of_social_networks;
+    section_of_utilities;;

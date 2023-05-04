@@ -1,0 +1,10 @@
+section_of_information_apps
+    =>nrel_main_idtf:[Раздел. Информационные приложения] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Section. Information apps] (* <-lang_en;;*);
+
+<-atomic_section;;/*При декомпозиции удалить 2 запятую*/
+
+/*=> nrel_section_decomposition:	
+concept;
+concept;;*/
+

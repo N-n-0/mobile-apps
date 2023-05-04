@@ -1,0 +1,13 @@
+section_of_services_for_calling_taxi
+    =>nrel_main_idtf:[Раздел. Сервисы для вызова такси] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Section. Services for calling taxi] (* <-lang_en;;*);
+
+<-atomic_section;
+
+=> nrel_section_decomposition:
+    concept_yandex_go;
+    concept_g10;
+    concept_maxim;
+
+-> rrel_explored_relation:
+    nrel_tariffs;;

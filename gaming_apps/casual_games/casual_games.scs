@@ -1,0 +1,9 @@
+section_of_casual_games
+    =>nrel_main_idtf:[Раздел. Казуальные игры] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Section. Casual games] (* <-lang_en;;*);
+
+<-atomic_section;; /*При декомпозиции удалить 2 запятую*/
+
+/*=> nrel_section_decomposition:	
+concept;
+concept;;*/

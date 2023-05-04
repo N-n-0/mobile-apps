@@ -1,0 +1,23 @@
+concept_multimotors
+
+=>nrel_main_idtf:[Приложениe для аренды автомобиля Multimotors]
+    (*
+         <-lang_ru;;
+    *);
+=>nrel_main_idtf:[App for car rental Multimotors]
+    (*
+         <-lang_en;;
+    *);
+<-subject_domain_of_app_for_car_rental;
+
+ <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//logo_multimotors.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);
+
+    => nrel_car_park: section_multimotors_car_park;;

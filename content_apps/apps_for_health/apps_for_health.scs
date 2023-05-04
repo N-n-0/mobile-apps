@@ -1,0 +1,15 @@
+section_of_apps_for_health
+
+=>nrel_main_idtf:[Раздел. Приложения для здоровья]
+    (*
+         <-lang_ru;;
+    *);
+=>nrel_main_idtf:[Section. Apps for health]
+    (*
+         <-lang_en;;
+    *);
+<-atomic_section;; /*При декомпозиции удалить 2 запятую*/
+
+/*=> nrel_section_decomposition:	
+concept;
+concept;;*/

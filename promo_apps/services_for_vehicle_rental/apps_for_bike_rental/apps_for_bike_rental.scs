@@ -1,0 +1,17 @@
+section_of_app_for_bike_rental
+
+=>nrel_main_idtf:[Раздел. Приложения для аренды велосипедов]
+    (*
+         <-lang_ru;;
+    *);
+=>nrel_main_idtf:[Section. Apps for bike rental]
+    (*
+         <-lang_en;;
+    *);
+<- non_atomic_section;
+
+=> nrel_section_decomposition:	
+	concept_kolobike;
+
+-> rrel_explored_relation:	
+    nrel_bike_park;;

@@ -1,0 +1,10 @@
+section_of_text_editors
+    =>nrel_main_idtf:[Раздел. Текстовые редакторы] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Section. Text editors] (* <-lang_en;;*);
+
+<-atomic_section;;/*При декомпозиции удалить 2 запятую*/
+
+/*=> nrel_section_decomposition:	
+concept;
+concept;;*/
+

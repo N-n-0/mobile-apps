@@ -1,0 +1,10 @@
+section_of_delete_programs_and_files_apps
+    =>nrel_main_idtf:[Раздел. Приложения для удаления программ и файлов] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Section. Delete programs and files apps] (* <-lang_en;;*);
+
+<-atomic_section;;/*При декомпозиции удалить 2 запятую*/
+
+/*=> nrel_section_decomposition:	
+concept;
+concept;;*/
+

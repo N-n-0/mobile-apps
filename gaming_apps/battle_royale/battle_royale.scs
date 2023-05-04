@@ -1,0 +1,11 @@
+section_of_battle_royale
+    =>nrel_main_idtf:[Раздел. Battle-royale] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Section. Battle-royale] (* <-lang_en;;*);
+
+<-atomic_section;; /*При декомпозиции удалить 2 запятую*/
+
+/*=> nrel_section_decomposition:	
+concept;
+concept;;*/
+
+

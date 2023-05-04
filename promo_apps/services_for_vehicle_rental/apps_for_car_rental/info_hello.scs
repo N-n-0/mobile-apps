@@ -1,0 +1,980 @@
+section_hello_car_park
+     => nrel_main_idtf:
+        [Автомобили]
+    (* <- lang_ru;; *);
+    ->Volkswagen_Polo_hello;
+    ->NEW_Volkswagen_Polo_hello;
+    ->Skoda_Rapid;
+    ->KIA_Rio_X;
+    ->JAC_J7;
+    ->MINI_Cooper_S_JCW;
+    ->MINI_Clubman;
+    ->MINI_Cooper;
+    ->Geely_Tugella;
+    ->Skoda_Karoq;
+    ->Volkswagen_Tiguan;
+    ->Volkswagen_Taos;
+    ->Geely_Coolray;
+    ->Kia_Seltos;
+    ->Ford_Mustang;
+    ->Doodge_Challenger;
+    ->Chevrolet_Camaro;
+    ->Tesla_Model_3;
+    ->Tesla_Model_3_Dual_Motor;
+    ->Tesla_Model_S;
+    ->Tesla_Model_X;
+    ->Tesla_Model_X_PERFOMANCE;;
+    
+
+section_relations
+    => nrel_main_idtf:
+        [используемые отношения]
+        (*<-lang_ru;;*);
+    =>nrel_minut;
+    =>nrel_minuts_and_kilometers;
+    =>nrel_minuts_and_kilometers_for_1_km;
+    =>nrel_hours_and_kilometers;
+    =>nrel_hours_and_kilometers_for_1_km;
+    =>nrel_days_and_kilometers;
+    =>nrel_days_and_kilometers_for_1_km;
+    =>nrel_minut_pack;
+    =>nrel_hours_pack;
+    =>nrel_min_age;
+    ->rrel_cop;
+    ->rrel_cop_per_30_min;
+    ->rrel_cop_per_60_min;
+    ->rrel_cop_per_120_min;
+    ->rrel_byn_per_3_hour;
+    ->rrel_byn_per_6_hour;
+    ->rrel_byn_per_9_hour;
+    ->rrel_byn_per_1_day;
+    ->rrel_byn_per_2_day;
+    ->rrel_byn_per_3_day;
+    ->rrel_byn_per_5_day;
+    ->rrel_byn_per_7_day;
+    ->rrel_byn_per_14_day;
+    ->rrel_byn_per_30_min;
+    ->rrel_byn_per_60_min;
+    ->rrel_years;
+    =>nrel_value;;
+
+section_tariffs
+   => nrel_main_idtf:
+        [Тарифы сервиса Hello]
+        (* <- lang_ru;; *);
+    ->tariff_minuts;
+    ->tariff_minuts_and_kilometters;
+    ->tariff_hours_and_kilometers;
+    ->tariff_days_and_kilometers;
+    ->tariff_minut_pack;
+    ->tariff_hours_pack;;
+section_parametrs
+    => nrel_main_idtf:
+        [Параметры]
+        (* <- lang_ru;; *);
+    ->18_years;
+    ->19_years;
+    ->23_years;
+    ->25_years;
+    ->39_cop;
+    ->41_cop;
+    ->43_cop;
+    ->45_cop;
+    ->57_cop;
+    ->65_cop;
+    ->67_cop;
+    ->77_cop;
+    ->79_cop;
+    ->89_cop;
+    ->99_cop;
+    ->139_cop;
+    ->149_cop;
+    ->209_cop;
+    ->390_cop_per_30_min;
+    ->690_cop_per_60_min;
+    ->1290_cop_per_120_min;
+    ->490_cop_per_30_min;
+    ->890_cop_per_60_min;
+    ->16_byn_per_3_hour;
+    ->25_byn_per_6_hour;
+    ->31_byn_per_9_hour;
+    ->29_byn_per_3_hour;
+    ->39_byn_per_6_hour;
+    ->42_byn_per_1_day;
+    ->82_byn_per_2_day;
+    ->119_byn_per_3_day;
+    ->195_byn_per_5_day;
+    ->272_byn_per_7_day;
+    ->535_byn_per_14_day;
+    ->89_byn_per_1_day;
+    ->59_byn_per_1_day;
+    ->116_byn_per_2_day;
+    ->169_byn_per_3_day;
+    ->279_byn_per_5_day;
+    ->391_byn_per_7_day;
+    ->765_byn_per_14_day;
+    ->209_byn_per_1_day;
+    ->21_byn_per_30_minuts;
+    ->37_byn_per_60_minuts;
+    ->39_byn_per_30_minuts;
+    ->59_byn_per_60_minuts;
+    ->42_byn_per_30_minuts;
+    ->69_byn_per_60_minuts;
+    ->89_byn_per_3_hours;
+    ->139_byn_per_3_hours;
+    ->149_byn_per_3_hours;;
+
+
+tariff_minuts
+    =>nrel_main_idtf: [Тариф "Минуты"] (* <-lang_ru;; *);
+    =>nrel_minut:
+        43_cop;
+        45_cop;
+        89_cop;
+        67_cop;
+        77_cop;
+        57_cop;
+        99_cop;
+        79_cop;
+        139_cop;
+        149_cop;
+        209_cop;;
+
+tariff_minuts_and_kilometters
+    =>nrel_main_idtf: [Тариф "Минуты+Километры"] (* <-lang_ru;; *);
+    =>nrel_minuts_and_kilometers:
+        390_cop_per_30_min;
+        690_cop_per_60_min;
+        1290_cop_per_120_min;
+        490_cop_per_30_min;
+        890_cop_per_60_min;
+    =>nrel_minuts_and_kilometers_for_1_km:
+        39_cop;
+        41_cop;
+        57_cop;;
+
+tariff_hours_and_kilometers
+    =>nrel_main_idtf: [Тариф "Часы+Километры"] (* <-lang_ru;; *);
+    =>nrel_hours_and_kilometers:
+        16_byn_per_3_hour;
+        25_byn_per_6_hour;
+        31_byn_per_9_hour;
+        29_byn_per_3_hour;
+        39_byn_per_6_hour;
+    =>nrel_hours_and_kilometers_for_1_km:
+        39_cop;
+        41_cop;
+        57_cop;;
+
+tariff_days_and_kilometers
+    =>nrel_main_idtf: [Тариф "Дни+Километры"] (* <-lang_ru;; *);
+    =>nrel_days_and_kilometers:
+        42_byn_per_1_day;
+        82_byn_per_2_day;
+        119_byn_per_3_day;
+        195_byn_per_5_day;
+        272_byn_per_7_day;
+        535_byn_per_14_day;
+        89_byn_per_1_day;
+        59_byn_per_1_day;
+        116_byn_per_2_day;
+        169_byn_per_3_day;
+        279_byn_per_5_day;
+        391_byn_per_7_day;
+        765_byn_per_14_day;
+        209_byn_per_1_day;
+    =>nrel_days_and_kilometers_for_1_km:
+        39_cop;
+        41_cop;
+        57_cop;
+        65_cop;
+        79_cop;;
+tariff_minut_pack
+    =>nrel_main_idtf: [Тариф "Минутный"] (* <-lang_ru;; *);
+    =>nrel_minut_pack:
+        21_byn_per_30_minuts;
+        37_byn_per_60_minuts;
+        39_byn_per_30_minuts;
+        59_byn_per_60_minuts;
+        42_byn_per_30_minuts;
+        69_byn_per_60_minuts;;
+
+tariff_hours_pack
+    =>nrel_main_idtf: [Тариф "Часовой"] (* <-lang_ru;; *);
+    =>nrel_hours_pack:
+        89_byn_per_3_hours;
+        139_byn_per_3_hours;
+        149_byn_per_3_hours;;
+    
+nrel_minut => nrel_main_idtf: [Cтоимость тарифа "Минуты"] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_minuts_and_kilometers => nrel_main_idtf: [Cтоимость тарифа "Минуты+километры"] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_minuts_and_kilometers_for_1_km => nrel_main_idtf: [Стоимость тарифа "Минуты+километры" (оплата за километр)] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_hours_and_kilometers => nrel_main_idtf: [Cтоимость тарифа "Часы+километры"] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_hours_and_kilometers_for_1_km => nrel_main_idtf: [Стоимость тарифа "Часы+километры" (оплата за километр)] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_days_and_kilometers => nrel_main_idtf: [Cтоимость тарифа "Дни+километры"] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_days_and_kilometers_for_1_km => nrel_main_idtf: [Стоимость тарифа "Дни+километры" (оплата за километр)] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_minut_pack => nrel_main_idtf: [Cтоимость тарифа "Минутный"] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_hours_pack => nrel_main_idtf: [Cтоимость тарифа "Часовой"] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_min_age => nrel_main_idtf: [Минимальный возраст пользователя] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+
+rrel_cop_per_30_min
+    <-sc_node_role_relation;;
+rrel_cop_per_60_min
+    <-sc_node_role_relation;;
+rrel_cop_per_120_min
+    <-sc_node_role_relation;;
+rrel_byn_per_3_hour
+    <-sc_node_role_relation;;
+rrel_byn_per_9_hour
+    <-sc_node_role_relation;;
+rrel_byn_per_6_hour
+    <-sc_node_role_relation;;
+rrel_byn_per_1_day
+    <-sc_node_role_relation;;
+rrel_byn_per_2_day
+    <-sc_node_role_relation;;
+rrel_byn_per_3_day
+    <-sc_node_role_relation;;
+rrel_byn_per_5_day
+    <-sc_node_role_relation;;
+rrel_byn_per_7_day
+    <-sc_node_role_relation;;
+rrel_byn_per_14_day
+    <-sc_node_role_relation;;
+rrel_byn_per_30_min
+    <-sc_node_role_relation;;
+rrel_byn_per_60_min
+    <-sc_node_role_relation;;
+rrel_years
+    <-sc_node_role_relation;;
+nrel_value
+    <- sc_node_norole_relation;;
+
+  Volkswagen_Polo_hello
+    =>nrel_main_idtf:[Volkswagen Polo] (*<-lang_en;;*);
+    =>nrel_min_age: 18_years;
+    =>nrel_minut: 43_cop;
+    =>nrel_minuts_and_kilometers:
+     690_cop_per_60_min;
+     390_cop_per_30_min;
+     1290_cop_per_120_min;
+    =>nrel_minuts_and_kilometers_for_1_km:
+     39_cop;
+    =>nrel_hours_and_kilometers :
+     16_byn_per_3_hour;
+     25_byn_per_6_hour;
+     31_byn_per_9_hour;
+    =>nrel_hours_and_kilometers_for_1_km :
+     39_cop;
+    =>nrel_days_and_kilometers :
+     42_byn_per_1_day;
+     82_byn_per_2_day;
+     119_byn_per_3_day;
+     195_byn_per_5_day;
+     272_byn_per_7_day;
+     535_byn_per_14_day;
+    =>nrel_days_and_kilometers_for_1_km :
+     39_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//Polo.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+
+  NEW_Volkswagen_Polo_hello
+    =>nrel_main_idtf:[Volkswagen Polo NEW] (*<-lang_en;;*);
+    =>nrel_min_age: 18_years;
+    =>nrel_minut: 45_cop;
+    =>nrel_minuts_and_kilometers:
+     690_cop_per_60_min;
+     390_cop_per_30_min;
+     1290_cop_per_120_min;
+    =>nrel_minuts_and_kilometers_for_1_km:
+     39_cop;
+    =>nrel_hours_and_kilometers :
+     16_byn_per_3_hour;
+     25_byn_per_6_hour;
+     31_byn_per_9_hour;
+    =>nrel_hours_and_kilometers_for_1_km :
+     39_cop;
+    =>nrel_days_and_kilometers :
+     42_byn_per_1_day;
+     82_byn_per_2_day;
+     119_byn_per_3_day;
+     195_byn_per_5_day;
+     272_byn_per_7_day;
+     535_byn_per_14_day;
+    =>nrel_days_and_kilometers_for_1_km :
+     39_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//Polo_new.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+
+  Skoda_Rapid
+    =>nrel_main_idtf:[Skoda Rapid] (*<-lang_en;;*);
+    =>nrel_min_age: 18_years;
+    =>nrel_minut: 45_cop;
+    =>nrel_minuts_and_kilometers:
+     690_cop_per_60_min;
+     390_cop_per_30_min;
+     1290_cop_per_120_min;
+    =>nrel_minuts_and_kilometers_for_1_km:
+     41_cop;
+    =>nrel_hours_and_kilometers :
+     16_byn_per_3_hour;
+     25_byn_per_6_hour;
+     31_byn_per_9_hour;
+    =>nrel_hours_and_kilometers_for_1_km :
+     41_cop;
+    =>nrel_days_and_kilometers :
+     42_byn_per_1_day;
+     82_byn_per_2_day;
+     119_byn_per_3_day;
+     195_byn_per_5_day;
+     272_byn_per_7_day;
+     535_byn_per_14_day;
+    =>nrel_days_and_kilometers_for_1_km :
+     41_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//rapid.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+
+  KIA_Rio_X
+    =>nrel_main_idtf:[KIA Rio X] (*<-lang_en;;*);
+    =>nrel_min_age: 18_years;
+    =>nrel_minut: 45_cop;
+    =>nrel_minuts_and_kilometers:
+     690_cop_per_60_min;
+     390_cop_per_30_min;
+     1290_cop_per_120_min;
+    =>nrel_minuts_and_kilometers_for_1_km:
+     41_cop;
+    =>nrel_hours_and_kilometers :
+     16_byn_per_3_hour;
+     25_byn_per_6_hour;
+     31_byn_per_9_hour;
+    =>nrel_hours_and_kilometers_for_1_km :
+     41_cop;
+    =>nrel_days_and_kilometers :
+     42_byn_per_1_day;
+     82_byn_per_2_day;
+     119_byn_per_3_day;
+     195_byn_per_5_day;
+     272_byn_per_7_day;
+     535_byn_per_14_day;
+    =>nrel_days_and_kilometers_for_1_km :
+     41_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//Rio.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+
+  JAC_J7
+    =>nrel_main_idtf:[JAC J7] (*<-lang_en;;*);
+    =>nrel_min_age: 18_years;
+    =>nrel_minut: 41_cop;
+    =>nrel_minuts_and_kilometers:
+     690_cop_per_60_min;
+     390_cop_per_30_min;
+     1290_cop_per_120_min;
+    =>nrel_minuts_and_kilometers_for_1_km:
+     41_cop;
+    =>nrel_hours_and_kilometers :
+     16_byn_per_3_hour;
+     25_byn_per_6_hour;
+     31_byn_per_9_hour;
+    =>nrel_hours_and_kilometers_for_1_km :
+     41_cop;
+    =>nrel_days_and_kilometers :
+     42_byn_per_1_day;
+     82_byn_per_2_day;
+     119_byn_per_3_day;
+     195_byn_per_5_day;
+     272_byn_per_7_day;
+     535_byn_per_14_day;
+    =>nrel_days_and_kilometers_for_1_km :
+     41_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//J7.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+
+  MINI_Cooper_S_JCW
+    =>nrel_main_idtf:[MINI Cooper S JCW] (*<-lang_en;;*);
+    =>nrel_min_age: 19_years;
+    =>nrel_minut: 89_cop;
+    =>nrel_days_and_kilometers: 89_byn_per_1_day;
+    =>nrel_days_and_kilometers_for_1_km: 65_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//S_jsw.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  MINI_Clubman
+    =>nrel_main_idtf:[MINI Clubman] (*<-lang_en;;*);
+    =>nrel_min_age: 19_years;
+    =>nrel_minut: 89_cop;
+    =>nrel_days_and_kilometers: 89_byn_per_1_day;
+    =>nrel_days_and_kilometers_for_1_km: 65_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//clubman.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  MINI_Cooper
+    =>nrel_main_idtf:[MINI Cooper] (*<-lang_en;;*);
+    =>nrel_min_age: 19_years;
+    =>nrel_minut: 67_cop;
+    =>nrel_days_and_kilometers: 79_byn_per_1_day;
+    =>nrel_days_and_kilometers_for_1_km: 61_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//cooper.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Geely_Tugella
+    =>nrel_main_idtf:[Geely Tugella] (*<-lang_en;;*);
+    =>nrel_min_age: 19_years;
+    =>nrel_minut : 77_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//tugella.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Skoda_Karoq
+    =>nrel_main_idtf:[Skoda Karoq] (*<-lang_en;;*);
+    =>nrel_min_age: 19_years;
+    =>nrel_minut : 57_cop;
+    =>nrel_minuts_and_kilometers :
+     890_cop_per_60_min;
+     490_cop_per_30_min;
+    =>nrel_minuts_and_kilometers_for_1_km : 57_cop;
+    =>nrel_hours_and_kilometers :
+     29_byn_per_3_hour;
+     39_byn_per_6_hour;
+    =>nrel_hours_and_kilometers_for_1_km : 57_cop;
+    =>nrel_days_and_kilometers :
+     59_byn_per_1_day;
+     116_byn_per_2_day;
+     169_byn_per_3_day;
+     279_byn_per_5_day;
+     391_byn_per_7_day;
+     765_byn_per_14_day;
+    =>nrel_days_and_kilometers_for_1_km : 57_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//karoq.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Volkswagen_Tiguan
+    =>nrel_main_idtf:[Volkswagen Tiguan] (*<-lang_en;;*);
+    =>nrel_min_age: 19_years;
+    =>nrel_minut : 57_cop;
+    =>nrel_minuts_and_kilometers :
+     890_cop_per_60_min;
+     490_cop_per_30_min;
+    =>nrel_minuts_and_kilometers_for_1_km : 57_cop;
+    =>nrel_hours_and_kilometers :
+     29_byn_per_3_hour;
+     39_byn_per_6_hour;
+    =>nrel_hours_and_kilometers_for_1_km : 57_cop;
+    =>nrel_days_and_kilometers :
+     59_byn_per_1_day;
+     116_byn_per_2_day;
+     169_byn_per_3_day;
+     279_byn_per_5_day;
+     391_byn_per_7_day;
+     765_byn_per_14_day;
+    =>nrel_days_and_kilometers_for_1_km : 57_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//tiguan.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Volkswagen_Taos
+    =>nrel_main_idtf:[Volkswagen Taos] (*<-lang_en;;*);
+    =>nrel_min_age: 19_years;
+    =>nrel_minut : 57_cop;
+    =>nrel_minuts_and_kilometers :
+     890_cop_per_60_min;
+     490_cop_per_30_min;
+    =>nrel_minuts_and_kilometers_for_1_km : 57_cop;
+    =>nrel_hours_and_kilometers :
+     29_byn_per_3_hour;
+     39_byn_per_6_hour;
+    =>nrel_hours_and_kilometers_for_1_km : 57_cop;
+    =>nrel_days_and_kilometers :
+     59_byn_per_1_day;
+     116_byn_per_2_day;
+     169_byn_per_3_day;
+     279_byn_per_5_day;
+     391_byn_per_7_day;
+     765_byn_per_14_day;
+    =>nrel_days_and_kilometers_for_1_km : 57_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//taos.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Geely_Coolray
+    =>nrel_main_idtf:[Geely Coolray] (*<-lang_en;;*);
+    =>nrel_min_age: 19_years;
+    =>nrel_minut : 57_cop;
+    =>nrel_minuts_and_kilometers :
+     890_cop_per_60_min;
+     490_cop_per_30_min;
+    =>nrel_minuts_and_kilometers_for_1_km : 57_cop;
+    =>nrel_hours_and_kilometers :
+     29_byn_per_3_hour;
+     39_byn_per_6_hour;
+    =>nrel_hours_and_kilometers_for_1_km : 57_cop;
+    =>nrel_days_and_kilometers :
+     59_byn_per_1_day;
+     116_byn_per_2_day;
+     169_byn_per_3_day;
+     279_byn_per_5_day;
+     391_byn_per_7_day;
+     765_byn_per_14_day;
+    =>nrel_days_and_kilometers_for_1_km : 57_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//coolray.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Kia_Seltos
+    =>nrel_main_idtf:[Kia Seltos] (*<-lang_en;;*);
+    =>nrel_min_age: 19_years;
+    =>nrel_minut : 57_cop;
+    =>nrel_minuts_and_kilometers :
+     890_cop_per_60_min;
+     490_cop_per_30_min;
+    =>nrel_minuts_and_kilometers_for_1_km : 57_cop;
+    =>nrel_hours_and_kilometers :
+     29_byn_per_3_hour;
+     39_byn_per_6_hour;
+    =>nrel_hours_and_kilometers_for_1_km : 57_cop;
+    =>nrel_days_and_kilometers :
+     59_byn_per_1_day;
+     116_byn_per_2_day;
+     169_byn_per_3_day;
+     279_byn_per_5_day;
+     391_byn_per_7_day;
+     765_byn_per_14_day;
+    =>nrel_days_and_kilometers_for_1_km : 57_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//seltos.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Ford_Mustang
+    =>nrel_main_idtf:[Ford Mustang] (*<-lang_en;;*);
+    =>nrel_min_age: 23_years;
+    =>nrel_minut: 99_cop;
+    =>nrel_days_and_kilometers : 209_byn_per_1_day;
+    =>nrel_days_and_kilometers_for_1_km : 79_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//mustang.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Doodge_Challenger
+    =>nrel_main_idtf:[Doodge Challenger] (*<-lang_en;;*);
+    =>nrel_min_age: 23_years;
+    =>nrel_minut: 99_cop;
+    =>nrel_days_and_kilometers : 209_byn_per_1_day;
+    =>nrel_days_and_kilometers_for_1_km : 79_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//challenger.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Chevrolet_Camaro
+    =>nrel_main_idtf:[Chevrolet Camaro] (*<-lang_en;;*);
+    =>nrel_min_age: 23_years;
+    =>nrel_minut: 99_cop;
+    =>nrel_days_and_kilometers : 209_byn_per_1_day;
+    =>nrel_days_and_kilometers_for_1_km : 79_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//camaro.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Tesla_Model_3
+    =>nrel_main_idtf:[Tesla Model 3] (*<-lang_en;;*);
+    =>nrel_min_age: 23_years;
+    =>nrel_minut: 79_cop;
+    =>nrel_minut_pack: 21_byn_per_30_minuts;
+    =>nrel_minut_pack: 37_byn_per_60_minuts;
+    =>nrel_hours_pack: 89_byn_per_3_hours;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//3.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Tesla_Model_3_Dual_Motor
+    =>nrel_main_idtf:[Tesla Model 3] (*<-lang_en;;*);
+    =>nrel_min_age: 23_years;
+    =>nrel_minut: 79_cop;
+    =>nrel_minut_pack: 21_byn_per_30_minuts;
+    =>nrel_minut_pack: 37_byn_per_60_minuts;
+    =>nrel_hours_pack: 89_byn_per_3_hours;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//3_d.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Tesla_Model_S
+    =>nrel_main_idtf:[Tesla Model S] (*<-lang_en;;*);
+    =>nrel_min_age: 23_years;
+    =>nrel_minut: 139_cop;
+    =>nrel_minut_pack: 39_byn_per_30_minuts;
+    =>nrel_minut_pack: 59_byn_per_60_minuts;
+    =>nrel_hours_pack: 139_byn_per_3_hours;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//s.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Tesla_Model_X
+    =>nrel_main_idtf:[Tesla Model X] (*<-lang_en;;*);
+    =>nrel_min_age: 23_years;
+    =>nrel_minut: 149_cop;
+    =>nrel_minut_pack: 42_byn_per_30_minuts;
+    =>nrel_minut_pack: 69_byn_per_60_minuts;
+    =>nrel_hours_pack: 149_byn_per_3_hours;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//x.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+ 
+  Tesla_Model_X_PERFOMANCE
+    =>nrel_main_idtf:[Tesla Model X PERFOMANSE] (*<-lang_en;;*);
+    =>nrel_min_age: 25_years;
+    =>nrel_minut: 209_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//x_p.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+
+39_cop
+    => nrel_main_idtf: [39 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 39;; *);;
+
+41_cop
+    => nrel_main_idtf: [41 копейка] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 41;; *);;
+
+43_cop
+    => nrel_main_idtf: [43 копейки] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 43;; *);;
+
+45_cop
+    => nrel_main_idtf: [45 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 45;; *);;
+
+57_cop
+    => nrel_main_idtf: [57 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 57;; *);;
+
+65_cop
+    => nrel_main_idtf: [65 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 65;; *);;
+
+67_cop
+    => nrel_main_idtf: [67 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 67;; *);;
+
+77_cop
+    => nrel_main_idtf: [77 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 77;; *);;
+
+79_cop
+    => nrel_main_idtf: [79 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 79;; *);;
+
+89_cop
+    => nrel_main_idtf: [89 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 89;; *);;
+99_cop
+    => nrel_main_idtf: [99 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 99;; *);;
+
+139_cop
+    => nrel_main_idtf: [139 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 139;; *);;
+
+149_cop
+    => nrel_main_idtf: [149 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 149;; *);;
+
+209_cop
+    => nrel_main_idtf: [209 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 209;; *);;
+
+390_cop_per_30_min
+    => nrel_main_idtf: [390 копеек за 30 минут] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_30_min: 390;; *);;
+
+690_cop_per_60_min
+    => nrel_main_idtf: [690 копеек за 60 минут] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_60_min: 690;; *);;
+
+1290_cop_per_120_min
+    => nrel_main_idtf: [1290 копеек за 120 минут] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_120_min: 1290;; *);;
+
+490_cop_per_30_min
+    => nrel_main_idtf: [490 копеек за 30 минут] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_30_min: 490;; *);;
+
+890_cop_per_60_min
+    => nrel_main_idtf: [890 копеек за 60 минут] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_60_min: 890;; *);;
+
+16_byn_per_3_hour
+    => nrel_main_idtf: [16 BYN за 3 часа] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_3_hour: 16;; *);;
+
+25_byn_per_6_hour
+    => nrel_main_idtf: [25 BYN за 6 часов] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_6_hour: 25;; *);;
+
+31_byn_per_9_hour
+    => nrel_main_idtf: [31 BYN за 9 часов] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_9_hour: 31;; *);;
+29_byn_per_3_hour
+    => nrel_main_idtf: [29 BYN за 3 часа] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_3_hour: 29;; *);;
+
+39_byn_per_6_hour
+    => nrel_main_idtf: [39 BYN за 6 часов] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_6_hour: 39;; *);;
+
+42_byn_per_1_day
+    => nrel_main_idtf: [42 BYN за 1 день] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_1_day: 42;; *);;
+
+82_byn_per_2_day
+    => nrel_main_idtf: [82 BYN за 2 дня] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_2_day: 82;; *);;
+
+119_byn_per_3_day
+    => nrel_main_idtf: [119 BYN за 3 дня] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_3_day: 119;; *);;
+
+195_byn_per_5_day
+    => nrel_main_idtf: [195 BYN за 5 дней] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_5_day: 195;; *);;
+
+272_byn_per_7_day
+    => nrel_main_idtf: [272 BYN за 7 дней] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_7_day: 272;; *);;
+
+535_byn_per_14_day
+    => nrel_main_idtf: [535 BYN за 14 дней] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_14_day: 535;; *);;
+
+89_byn_per_1_day
+    => nrel_main_idtf: [89 BYN за 1 день] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_1_day: 89;; *);;
+
+59_byn_per_1_day
+    => nrel_main_idtf: [59 BYN за 1 день] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_1_day: 59;; *);;
+
+116_byn_per_2_day
+    => nrel_main_idtf: [116 BYN за 2 дня] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_2_day: 116;; *);;
+
+169_byn_per_3_day
+    => nrel_main_idtf: [169 BYN за 3 дня] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_3_day: 169;; *);;
+
+279_byn_per_5_day
+    => nrel_main_idtf: [279 BYN за 5 дней] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_5_day: 279;; *);;
+
+391_byn_per_7_day
+    => nrel_main_idtf: [391 BYN за 7 дней] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_7_day: 391;; *);;
+
+765_byn_per_14_day
+    => nrel_main_idtf: [765 BYN за 14 дней] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_14_day: 765;; *);;
+
+209_byn_per_1_day
+    => nrel_main_idtf: [209 BYN за 1 день] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_1_day: 209;; *);;
+
+21_byn_per_30_minuts
+    => nrel_main_idtf: [21 BYN за 30 минут] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_30_min: 21;; *);;
+
+37_byn_per_60_minuts
+    => nrel_main_idtf: [37 BYN за 60 минут] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_60_min: 37;; *);;
+
+39_byn_per_30_minuts
+    => nrel_main_idtf: [39 BYN за 30 минут] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_30_min: 39;; *);;
+
+59_byn_per_60_minuts
+    => nrel_main_idtf: [59 BYN за 60 минут] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_60_min: 59;; *);;
+
+42_byn_per_30_minuts
+    => nrel_main_idtf: [42 BYN за 30 минут] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_30_min: 42;; *);;
+
+69_byn_per_60_minuts
+    => nrel_main_idtf: [69 BYN за 60 минут] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_60_min: 69;; *);;
+
+89_byn_per_3_hours
+    => nrel_main_idtf: [89 BYN за 3 часа] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_3_hour: 89;; *);;
+
+139_byn_per_3_hours
+    => nrel_main_idtf: [139 BYN за 3 часа] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_3_hour: 139;; *);;
+
+149_byn_per_3_hours
+    => nrel_main_idtf: [149 BYN за 3 часа] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_3_hour: 149;; *);;
+
+18_years
+    =>nrel_main_idtf: [18 лет] (* <-lang_ru;;*);
+    =>nrel_value:...(* -> rrel_years: 18;;*);;
+
+19_years
+    =>nrel_main_idtf: [19 лет] (* <-lang_ru;;*);
+    =>nrel_value:...(* -> rrel_years: 19;;*);;
+
+23_years
+    =>nrel_main_idtf: [23 лет] (* <-lang_ru;;*);
+    =>nrel_value:...(* -> rrel_years: 23;;*);;
+
+25_years
+    =>nrel_main_idtf: [25 лет] (* <-lang_ru;;*);
+    =>nrel_value:...(* -> rrel_years: 25;;*);;

@@ -1,0 +1,10 @@
+section_of_internet_shops
+    =>nrel_main_idtf:[Раздел. Интернет-магазины] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Section. Internet shops] (* <-lang_en;;*);
+
+<-atomic_section;;/*При декомпозиции удалить 2 запятую*/
+
+/*=> nrel_section_decomposition:	
+concept;
+concept;;*/
+

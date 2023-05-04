@@ -1,0 +1,240 @@
+section_multimotors_car_park
+ => nrel_main_idtf:
+        [Автомобили]
+    (* <- lang_ru;; *);
+    ->KIA_Rio_X_Line;
+    ->Chevrolet_Cobalt;;
+
+section_relations
+    => nrel_main_idtf:
+        [используемые отношения]
+        (*<-lang_ru;;*);
+    =>nrel_minuts_and_kilometers;
+    =>nrel_minuts_and_kilometers_for_1_km;
+    =>nrel_minut_pack;
+    =>nrel_drive_10;
+    =>nrel_drive_10_for_1_km;
+    =>nrel_drive_20;
+    =>nrel_drive_20_for_1_km;
+    =>nrel_30_minut;
+    =>nrel_30_minut_for_1_km;
+    =>nrel_1_hour;
+    =>nrel_1_hour_for_1_km;
+    =>nrel_2_hours;
+    =>nrel_2_hours_for_1_km;
+    =>nrel_min_age;
+    ->rrel_cop_per_km;
+    ->rrel_years;
+    ->rrel_cop_per_30_min;
+    ->rrel_cop_per_1_hour;
+    ->rrel_cop_per_2_hours;
+    ->rrel_cop_per_5_km;
+    ->rrel_byn_per_10_km;
+    =>nrel_value;;
+
+section_tariffs
+   => nrel_main_idtf:
+        [Тарифы сервиса Multimotors]
+        (* <- lang_ru;; *);
+    ->tariff_minuts_and_kilometters;
+    ->tariff_drive_10;
+    ->tariff_drive_20;
+    ->tariff_30_minut;
+    ->tariff_1_hour;
+    ->tariff_2_hours;
+    ->tariff_minut_pack;;
+
+section_parametrs
+    => nrel_main_idtf:
+        [Параметры]
+        (* <- lang_ru;; *);
+    34_cop_per_minut;
+    18_years;
+    17_cop_per_minut;
+    34_cop_per_km;
+    350_cop_per_5_km;
+    40_cop_per_km;
+    7_byn_per_10_km;
+    170_cop_per_30_min;
+    68_cop_per_km;
+    340_cop_per_1_hour;
+    670_cop_per_2_hours;;
+
+tariff_minut_pack
+    =>nrel_main_idtf: [Тариф "Минутный"] (* <-lang_ru;; *);
+    =>nrel_minut_pack: 34_cop_per_minut;;
+
+tariff_minuts_and_kilometters
+    =>nrel_main_idtf: [Тариф "Минуты+километры"] (* <-lang_ru;; *);
+    =>nrel_minuts_and_kilometers: 17_cop_per_minut;
+    =>nrel_minuts_and_kilometers_for_1_km: 34_cop_per_km;;
+
+tariff_drive_10
+    =>nrel_main_idtf: [Тариф "Драйв 10"] (* <-lang_ru;; *);
+    =>nrel_drive_10: 350_cop_per_5_km;
+    =>nrel_drive_10_for_1_km: 40_cop_per_km;;
+
+tariff_drive_20
+    =>nrel_main_idtf: [Тариф "Драйв 20"] (* <-lang_ru;; *);
+    =>nrel_drive_20: 7_byn_per_10_km;
+    =>nrel_drive_20_for_1_km:40_cop_per_km;;
+
+tariff_30_minut
+    =>nrel_main_idtf: [Тариф "Полчасика"] (* <-lang_ru;; *);
+    =>nrel_30_minut: 170_cop_per_30_min;
+    =>nrel_30_minut_for_1_km: 68_cop_per_km;;
+
+tariff_1_hour
+    =>nrel_main_idtf: [Тариф "Часик"] (* <-lang_ru;; *);
+    =>nrel_1_hour: 340_cop_per_1_hour;
+    =>nrel_1_hour_for_1_km: 68_cop_per_km;;
+
+tariff_2_hours
+    =>nrel_main_idtf: [Тариф "Два часа"] (* <-lang_ru;; *);
+    =>nrel_2_hours: 670_cop_per_2_hours;
+    =>nrel_2_hours_for_1_km: 68_cop_per_km;;
+
+nrel_drive_10 => nrel_main_idtf: [Стоимость тарифа "Драйв 10"] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+
+nrel_drive_10_for_1_km => nrel_main_idtf: [Стоимость тарифа "Драйв 10" (оплата за километр)] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+
+nrel_drive_20 => nrel_main_idtf: [Стоимость тарифа "Драйв 20" ] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+
+nrel_drive_20_for_1_km => nrel_main_idtf: [Стоимость тарифа "Драйв 20" (оплата за километр)] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+
+nrel_30_minut => nrel_main_idtf: [Стоимость тарифа "Полчасика" ] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+
+nrel_30_minut_for_1_km => nrel_main_idtf: [Стоимость тарифа "Полчасика" (оплата за километр)] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+
+nrel_1_hour => nrel_main_idtf: [Стоимость тарифа "Часик" ] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+
+nrel_1_hour_for_1_km => nrel_main_idtf: [Стоимость тарифа "Часик" (оплата за километр)] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+
+nrel_2_hours => nrel_main_idtf: [Стоимость тарифа "Два часа" ] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+
+nrel_2_hours_for_1_km => nrel_main_idtf: [Стоимость тарифа "Два часа" (оплата за километр)] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+
+rrel_years
+     <-sc_node_role_relation;;
+rrel_cop_per_minut
+     <-sc_node_role_relation;;
+rrel_cop_per_km
+     <-sc_node_role_relation;;
+rrel_cop_per_30_min
+     <-sc_node_role_relation;;
+rrel_cop_per_1_hour
+     <-sc_node_role_relation;;
+rrel_cop_per_2_hours
+     <-sc_node_role_relation;;
+rrel_cop_per_5_km
+     <-sc_node_role_relation;;
+rrel_byn_per_10_km
+     <-sc_node_role_relation;;
+nrel_value
+     <-sc_node_norole_relation;;
+
+Chevrolet_Cobalt
+    =>nrel_main_idtf:[Chevrolet Cobalt] (*<-lang_ru;;*);
+    =>nrel_min_age: 18_years;
+    =>nrel_minut: 34_cop_per_minut;
+    =>nrel_minuts_and_kilometers: 17_cop_per_minut;
+    =>nrel_minuts_and_kilometers_for_1_km: 34_cop_per_km;
+    =>nrel_drive_10: 350_cop_per_5_km;
+    =>nrel_drive_10_for_1_km: 40_cop_per_km;
+    =>nrel_drive_20: 7_byn_per_10_km;
+    =>nrel_drive_20_for_1_km:40_cop_per_km;
+    =>nrel_30_minut: 170_cop_per_30_min;
+    =>nrel_30_minut_for_1_km: 68_cop_per_km;
+    =>nrel_1_hour: 340_cop_per_1_hour;
+    =>nrel_1_hour_for_1_km: 68_cop_per_km;
+    =>nrel_2_hours: 670_cop_per_2_hours;
+    =>nrel_2_hours_for_1_km: 68_cop_per_km;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//Cobalt.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;
+
+KIA_Rio_X_Line
+    =>nrel_main_idtf:[KIA Rio X Line] (*<-lang_ru;;*);
+    =>nrel_min_age: 18_years;
+    =>nrel_minut: 34_cop_per_minut;
+    =>nrel_minuts_and_kilometers: 17_cop_per_minut;
+    =>nrel_minuts_and_kilometers_for_1_km: 34_cop_per_km;
+    =>nrel_drive_10: 350_cop_per_5_km;
+    =>nrel_drive_10_for_1_km: 40_cop_per_km;
+    =>nrel_drive_20: 7_byn_per_10_km;
+    =>nrel_drive_20_for_1_km:40_cop_per_km;
+    =>nrel_30_minut: 170_cop_per_30_min;
+    =>nrel_30_minut_for_1_km: 68_cop_per_km;
+    =>nrel_1_hour: 340_cop_per_1_hour;
+    =>nrel_1_hour_for_1_km: 68_cop_per_km;
+    =>nrel_2_hours: 670_cop_per_2_hours;
+    =>nrel_2_hours_for_1_km: 68_cop_per_km;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//XLine.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);;
+
+34_cop_per_minut
+    => nrel_main_idtf: [34 копеек/минута] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_minut: 34;; *);;
+
+17_cop_per_minut
+    => nrel_main_idtf: [17 копеек/минута] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_minut: 17;; *);;
+
+34_cop_per_km
+    => nrel_main_idtf: [34 копеек/км] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_km: 34;; *);;
+
+350_cop_per_5_km
+    => nrel_main_idtf: [350 копеек за 5 километров] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_5_km: 350;; *);;
+
+40_cop_per_km
+    => nrel_main_idtf: [40 копеек/км] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_km: 40;; *);;
+
+7_byn_per_10_km
+    => nrel_main_idtf: [7 BYN за 10 километров] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn_per_10_km: 7;; *);;
+
+170_cop_per_30_min
+    => nrel_main_idtf: [170 копеек за 30 минут] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_30_min: 170;; *);;
+
+68_cop_per_km
+    => nrel_main_idtf: [68 копеек/км] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_km: 68;; *);;
+
+340_cop_per_1_hour
+    => nrel_main_idtf: [340 копеек за 1 час] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_1_hour: 340;; *);;
+    
+670_cop_per_2_hours
+    => nrel_main_idtf: [670 копеек за 2 часа] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_2_hours: 670;; *);;
+
+18_years
+    =>nrel_main_idtf: [18 лет] (* <-lang_ru;;*);
+    =>nrel_value:...(* -> rrel_years: 18;;*);;

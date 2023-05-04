@@ -1,0 +1,23 @@
+concept_hello 
+
+=>nrel_main_idtf:[Приложениe для аренды автомобиля Hello]
+    (*
+         <-lang_ru;;
+    *);
+=>nrel_main_idtf:[App for car rental Hello]
+    (*
+         <-lang_en;;
+    *);
+<-concept;
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//logo_hello.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);
+
+    => nrel_car_park: section_hello_car_park;;

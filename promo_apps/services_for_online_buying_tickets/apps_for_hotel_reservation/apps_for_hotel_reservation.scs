@@ -1,0 +1,15 @@
+section_of_apps_for_hotel_reservation
+
+=>nrel_main_idtf:[Раздел. Приложения для покупки билетов на международное такси]
+    (*
+         <-lang_ru;;
+    *);
+=>nrel_main_idtf:[Section. Apps for hotel reservation]
+    (*
+         <-lang_en;;
+    *);
+<-non_atomic_section;; /*При декомпозиции удалить 2 запятую*/
+
+/*=> nrel_section_decomposition:	
+concept;
+concept;;*/

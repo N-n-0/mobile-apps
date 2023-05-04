@@ -1,0 +1,48 @@
+concept_anytime
+
+=>nrel_main_idtf:[Приложениe для аренды автомобиля Anytime]
+    (*
+         <-lang_ru;;
+    *);
+=>nrel_main_idtf:[App for car rental Anytime]
+    (*
+         <-lang_en;;
+    *);
+<-concept;
+/*=> nrel_private_subject_domain:	
+	section_hello;
+    section_anytime;
+    section_multimotors;
+
+<= nrel_private_subject_domain:
+	subject_domain_of_services_for_vehicle_rental;
+
+-> rrel_maximum_studied_object_class:
+	concept_apps_for_car_rental;
+
+-> rrel_not_maximum_studied_object_class:	
+        section_hello;
+        section_anytime;
+        section_multimotors;
+*/  //=>nrel_section_apps_for_car_rental: section_apps_for_car_rental;
+    =>nrel_area_of_action: minsk;
+    =>nrel_vehicle_park:  Volkswagen_Polo;
+    =>nrel_vehicle_park:  Geely_Emgrand7;
+    =>nrel_vehicle_park:  BMW_320i;
+    =>nrel_vehicle_park:  HAVAL_Jolion;
+    =>nrel_vehicle_park:  Jeep_Wrangler;
+    =>nrel_vehicle_park:  Mersedes_E_200;
+    =>nrel_vehicle_park:  Mersedes_GLC;
+    =>nrel_tariff: minuts;
+    =>nrel_tariff: fix;
+    =>nrel_tariff: hours;
+    =>nrel_tariff: days;
+    =>nrel_price: from_45_to_250_cop_per_minut;
+    =>nrel_min_age: 18_years;
+
+-> rrel_explored_relation:	
+    nrel_price;
+    nrel_tariff;
+    nrel_vehicle_park;
+    nrel_area_of_action;
+    nrel_min_age;;

@@ -1,0 +1,23 @@
+concept_kolobike
+
+=>nrel_main_idtf:[Приложениe для аренды велосипедов Kolobike]
+    (*
+         <-lang_ru;;
+    *);
+=>nrel_main_idtf:[App for bike rental Kolobike]
+    (*
+         <-lang_en;;
+    *);
+<-section_of_app_for_bike_rental;
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//kolobike_logo.png"
+            (*
+                => nrel_format: format_png;;
+            *);;
+        *);;
+    *);
+
+    => nrel_bike_park: section_kolobike_bike_park;;

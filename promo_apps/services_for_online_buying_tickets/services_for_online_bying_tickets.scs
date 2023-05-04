@@ -1,0 +1,17 @@
+section_of_services_for_online_buying_tickets
+
+=>nrel_main_idtf:[Раздел. Cервисы для онлайн покупки билетов]
+    (*
+         <-lang_ru;;
+    *);
+=>nrel_main_idtf:[Section. Services for online bying tickets]
+    (*
+         <-lang_en;;
+    *);
+<-non_atomic_section; 
+
+=> nrel_section_decomposition:	
+section_of_apps_for_buying_tickets_for_events; 
+section_of_apps_for_buying_tickets_for_movement; 
+section_of_apps_for_hotel_reservation;;
+

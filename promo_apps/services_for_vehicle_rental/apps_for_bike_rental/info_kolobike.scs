@@ -1,0 +1,154 @@
+section_kolobike_bike_park
+ => nrel_main_idtf:
+        [Велосипеды]
+    (* <- lang_ru;; *);
+    ->City_bike;
+    ->City_E_bike;;
+
+section_relations
+    => nrel_main_idtf:
+        [используемые отношения]
+        (*<-lang_ru;;*);
+    =>nrel_area_of_action;
+    =>nrel_min_age;
+    =>nrel_usual_start;
+    =>nrel_usual_minut;
+    =>nrel_free_starts;
+    =>nrel_free_starts_minut;
+    =>nrel_30_plus_15;
+    ->rrel_cop;
+    ->rrel_years;
+    ->rrel_byn;
+    ->rrel_cop_per_minut;
+    =>nrel_value;;
+
+section_tariffs
+   => nrel_main_idtf:
+        [Тарифы сервиса Multimotors]
+        (* <- lang_ru;; *);
+    ->tariff_usual;
+    ->tariff_free_starts;
+    ->tariff_30_plus_15;;
+
+section_parametrs
+    => nrel_main_idtf:
+        [Параметры]
+        (* <- lang_ru;; *);
+        14_years;
+        50_cop;
+        349_cop;
+        1690_cop;
+        1_byn;
+        24_cop_per_minut;
+        5_cop_per_minut;;
+
+tariff_usual
+    =>nrel_main_idtf: [Тариф "Обычный"] (* <-lang_ru;; *);
+    =>nrel_usual_start:
+     50_cop;
+     1_byn;
+    =>nrel_usual_minut:
+     5_cop_per_minut;
+     24_cop_per_minut;;
+
+tariff_free_starts
+    =>nrel_main_idtf: [Тариф "Бесплатные старты на месяц" ] (* <-lang_ru;;*);
+    =>nrel_free_starts: 349_cop;
+    =>nrel_free_starts_minut:
+     5_cop_per_minut;
+     24_cop_per_minut;;
+
+tariff_30_plus_15
+    =>nrel_main_idtf: [Тариф "30+15" ] (* <-lang_ru;;*);
+    =>nrel_30_plus_15: 1690_cop;;
+
+nrel_area_of_action => nrel_main_idtf: [Локации для аренды] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_min_age => nrel_main_idtf: [Минимальный возраст пользователя] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_usual_start => nrel_main_idtf: [Стоимость тарифа "Обычный" (старт)] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_usual_minut => nrel_main_idtf: [Стоимость тарифа "Обычный" (оплата за минуту)] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_free_starts => nrel_main_idtf: [Стоимость тарифа "Бесплатные старты"] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_free_starts_minut => nrel_main_idtf: [Стоимость тарифа "Бесплатные старты" (оплата за минуту)] (* <- lang_ru;; *);
+    <- sc_node_norole_relation;;
+nrel_30_plus_15 => nrel_main_idtf: [Стоимость тарифа "30+15"] (* <- lang_ru;; *);
+    <- sc_node_role_relation;;
+rrel_years
+    <-sc_node_role_relation;;
+rrel_cop
+    <- sc_node_role_relation;;
+rrel_byn
+    <- sc_node_role_relation;;
+rrel_cop_per_minut
+    <- sc_node_role_relation;;
+nrel_value
+    <- sc_node_norole_relation;;
+
+City_bike
+    =>nrel_main_idtf:[City bike] (*<-lang_ru;;*);
+    =>nrel_min_age: 14_years;
+    =>nrel_area_of_action: minsk;
+    =>nrel_area_of_action: gomel;
+    =>nrel_area_of_action: lida;
+    =>nrel_area_of_action: grodno;
+    =>nrel_usual_start: 50_cop;
+    =>nrel_usual_minut: 5_cop_per_minut;
+    =>nrel_free_starts: 349_cop;
+    =>nrel_free_starts_minut: 5_cop_per_minut;
+    =>nrel_30_plus_15: 1690_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//city.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;
+
+City_E_bike
+    =>nrel_main_idtf:[City E bike] (*<-lang_ru;;*);
+    =>nrel_min_age: 14_years;
+    =>nrel_area_of_action: minsk;
+    =>nrel_area_of_action: gomel;
+    =>nrel_area_of_action: lida;
+    =>nrel_area_of_action: grodno;
+    =>nrel_usual_start: 50_cop;
+    =>nrel_usual_minut: 24_cop_per_minut;
+    =>nrel_free_starts: 349_cop;
+    =>nrel_free_starts_minut: 24_cop_per_minut;
+    =>nrel_30_plus_15: 1690_cop;
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//city_e.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);;
+
+14_years
+    =>nrel_main_idtf: [14 лет] (* <-lang_ru;;*);
+    =>nrel_value:...(* -> rrel_years: 14;;*);;
+50_cop
+    => nrel_main_idtf: [50 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 50;; *);;
+349_cop
+    => nrel_main_idtf: [349 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 349;; *);;
+1690_cop
+    => nrel_main_idtf: [1690 копеек] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop: 1690;; *);;
+1_byn
+    => nrel_main_idtf: [1 BYN] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_byn: 1;; *);;
+24_cop_per_minut
+    => nrel_main_idtf: [24 копеек/минута] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_minut: 24;; *);;
+5_cop_per_minut
+    => nrel_main_idtf: [5 копеек/минута] (* <-lang_ru;; *);
+    => nrel_value:...(* -> rrel_cop_per_minut: 5;; *);;

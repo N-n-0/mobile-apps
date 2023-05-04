@@ -1,0 +1,19 @@
+section_of_app_for_car_rental
+
+=>nrel_main_idtf:[Раздел. Приложения для аренды автомобилей]
+    (*
+         <-lang_ru;;
+    *);
+=>nrel_main_idtf:[Section. Apps for car rental]
+    (*
+         <-lang_en;;
+    *);
+<-non_atomic_section;
+
+=> nrel_section_decomposition:	
+	concept_hello;
+    concept_anytime;
+    concept_multimotors;
+
+-> rrel_explored_relation:	
+    nrel_car_park;;

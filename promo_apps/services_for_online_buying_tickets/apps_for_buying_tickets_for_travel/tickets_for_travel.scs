@@ -1,0 +1,15 @@
+section_of_apps_for_buying_tickets_for_movement
+
+=>nrel_main_idtf:[Раздел. Приложения для покупок билетов для передвижения]
+    (*
+         <-lang_ru;;
+    *);
+=>nrel_main_idtf:[Section. Apps buying tickets for movement]
+    (*
+         <-lang_en;;
+    *);
+<-non_atomic_section;; /*При декомпозиции удалить 2 запятую*/
+
+/*=> nrel_section_decomposition:	
+concept;
+concept;;*/

@@ -1,0 +1,12 @@
+section_of_editors
+    =>nrel_main_idtf:[Раздел. Редакторы] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Section. Editors] (* <-lang_en;;*);
+
+<-not_atomic_section;
+
+=>nrel_section_decomposition:
+    section_of_audio_editors;
+	section_of_photo_editors;
+	section_of_text_editors;
+    section_of_video_editors;;
+
