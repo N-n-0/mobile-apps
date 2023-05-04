@@ -1,0 +1,23 @@
+concept_rcp2
+    => nrel_main_idtf:
+        [Симулятор управления автомобилем Real Car Parking 2]
+        (* <- lang_ru;; *);
+    <-subject_domain_of_simulators;
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//rcp2.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);
+
+
+    =>nrel_view: first_and_third_face;
+    =>nrel_type_of_game: single_and_multiplayer;
+    =>nrel_have_donate: have;
+    =>nrel_graphic: advanced;
+    =>nrel_graphic_style: 3D;
+    =>nrel_genre: drive_simulator;;

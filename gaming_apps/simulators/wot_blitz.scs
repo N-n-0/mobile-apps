@@ -1,0 +1,23 @@
+concept_WOT_blitz
+    => nrel_main_idtf:
+        [Симулятор танковых баталлий World Of Tanks blitz]
+        (* <- lang_ru;; *);
+    <-concept;
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//WOT_blitz.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);
+
+
+    =>nrel_view: third_face;
+    =>nrel_type_of_game: multiplayer;
+    =>nrel_have_donate: have;
+    =>nrel_graphic: realistic;
+    =>nrel_graphic_style: 3D;
+    =>nrel_genre: military_simulator;;

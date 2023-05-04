@@ -1,0 +1,22 @@
+concept_mortal_kombat
+=> nrel_main_idtf:
+    [Файтинг Mortal Kombat Mobile]
+    (* <- lang_ru;; *);
+    <-concept;
+
+    <- rrel_key_sc_element: ... (*
+        <-illustration;;
+        <=nrel_sc_text_translation: ... (*
+            ->rrel_example: "file://Photo//Mortal_Kombat.jpg"
+            (*
+                =>nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);
+
+    =>nrel_view: third_face;
+    =>nrel_type_of_game: single_and_multiplayer;
+    =>nrel_have_donate: have;
+    =>nrel_graphic: advanced;
+    =>nrel_graphic_style: 3D;
+    =>nrel_genre: fighting;;

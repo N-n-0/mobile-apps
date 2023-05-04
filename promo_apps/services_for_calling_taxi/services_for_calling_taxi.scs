@@ -9,5 +9,8 @@ section_of_services_for_calling_taxi
     concept_g10;
     concept_maxim;
 
+
+
 -> rrel_explored_relation:
-    nrel_tariffs;;
+    nrel_tariffs;
+    nrel_have_autopark;;

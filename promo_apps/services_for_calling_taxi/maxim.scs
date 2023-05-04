@@ -1,0 +1,16 @@
+concept_maxim 
+    => nrel_main_idtf: [Сервис для заказа такси "Maxim"] (* <-lang_ru;;*);
+    <-section_of_services_for_calling_taxi;
+
+    <- rrel_key_sc_element: ... (*
+        <- illustration;;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: "file://Photo//maxim.jpg"
+            (*
+                => nrel_format: format_jpg;;
+            *);;
+        *);;
+    *);
+
+    => nrel_have_autopark: not_have;
+    => nrel_tariff: section_maxim_tariff;;

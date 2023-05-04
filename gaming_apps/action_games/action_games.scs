@@ -1,10 +1,18 @@
 section_of_action_games
-    =>nrel_main_idtf:[Раздел. Экшн-игр] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Раздел. Экшн-игры] (* <-lang_ru;;*);
     =>nrel_main_idtf:[Section. Action games] (* <-lang_en;;*);
 
-<-atomic_section;; /*При декомпозиции удалить 2 запятую*/
+<-non_atomic_section;
 
-/*=> nrel_section_decomposition:	
-concept;
-concept;;*/
+=> nrel_section_decomposition:
+    concept_standoff_2;
+    concept_mortal_kombat;
+    concept_super_mario;
 
+->rrel_explored_relation:
+    nrel_graphic;
+    nrel_view;
+    nrel_have_donate;
+    nrel_type_of_game;
+    nrel_graphic_style;
+    nrel_genre;;
