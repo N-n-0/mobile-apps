@@ -13,4 +13,9 @@ maxim
     *);
 
     => nrel_have_autopark: not_have;
-    => nrel_tariff: section_maxim_tariff;;
+    => nrel_tariff: section_maxim_tariff;
+    -> rrel_developer: unknown;
+    -> rrel_supported_platform: IOS;
+    -> rrel_supported_platform: Android;
+    ->rrel_supported_language: all_language;
+    ->nrel_use_of_personal_data: use;;

@@ -14,4 +14,9 @@ yandex_go
 
 
     => nrel_have_autopark: section_yandex_go_autopark;
-    => nrel_tariff: section_yandex_go_tariff;;
+    => nrel_tariff: section_yandex_go_tariff;
+    -> rrel_developer: YandexLLC;
+    -> rrel_supported_platform: IOS;
+    -> rrel_supported_platform: Android;
+    ->rrel_supported_language: all_language;
+    ->nrel_use_of_personal_data: use;;
