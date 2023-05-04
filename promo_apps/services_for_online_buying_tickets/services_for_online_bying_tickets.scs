@@ -1,17 +1,17 @@
-section_of_services_for_online_buying_tickets
+subject_domain_of_services_for_online_buying_tickets
 
-=>nrel_main_idtf:[Раздел. Cервисы для онлайн покупки билетов]
+=>nrel_main_idtf:[Предметная область. Cервисы для онлайн покупки билетов]
     (*
          <-lang_ru;;
     *);
-=>nrel_main_idtf:[Section. Services for online bying tickets]
+=>nrel_main_idtf:[Subject domain. Services for online bying tickets]
     (*
          <-lang_en;;
     *);
-<-non_atomic_section; 
+<-subject_domain;
 
-=> nrel_section_decomposition:	
-section_of_apps_for_buying_tickets_for_events; 
-section_of_apps_for_buying_tickets_for_movement; 
-section_of_apps_for_hotel_reservation;;
+=> nrel_decomposition:	
+    subject_domain_of_apps_for_buying_tickets_for_events; 
+    subject_domain_of_apps_for_buying_tickets_for_movement; 
+    subject_domain_of_apps_for_hotel_reservation;;
 

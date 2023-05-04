@@ -1,0 +1,9 @@
+concept_apps_for_buying_tickets_for_movement_examples
+=> nrel_main_idtf:
+    [Мобильные приложения для покупок билетов для передвижения]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Mobile apps for buying tickets for movement]
+    (* <- lang_en;; *);; //убрать одну ;
+    
+//->название приложения;

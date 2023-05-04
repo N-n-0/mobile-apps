@@ -1,4 +1,4 @@
-concept_anytime
+anytime
 
 =>nrel_main_idtf:[Приложениe для аренды автомобиля Anytime]
     (*
@@ -8,7 +8,7 @@ concept_anytime
     (*
          <-lang_en;;
     *);
-<-concept;
+
 /*=> nrel_private_subject_domain:	
 	section_hello;
     section_anytime;

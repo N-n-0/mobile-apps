@@ -1,0 +1,9 @@
+concept_internet_shops_examples
+=> nrel_main_idtf:
+    [Мобильные интернет магазины]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Mobile internet shops]
+    (* <- lang_en;; *);; //убрать одну ;
+    
+//->название приложения;

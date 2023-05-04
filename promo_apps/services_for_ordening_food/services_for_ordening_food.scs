@@ -1,15 +1,18 @@
-section_of_services_for_ordering_food
+subject_domain_of_services_for_ordering_food
 
-=>nrel_main_idtf:[Раздел. Сервисы для заказа еды]
+=>nrel_main_idtf:[Предметная область. Сервисы для заказа еды]
     (*
          <-lang_ru;;
     *);
-=>nrel_main_idtf:[Section. Services for ordering food]
+=>nrel_main_idtf:[Subject domain. Services for ordering food]
     (*
          <-lang_en;;
     *);
-<-atomic_section;; /*При декомпозиции удалить 2 запятую*/
+<-subject_domain;
 
-/*=> nrel_section_decomposition:	
-concept;
-concept;;*/
+->rrel_maximum_studied_object_class:
+    concept_services_for_ordering_food_examples;;
+
+/*-> rrel_explored_relation:
+    ...
+    ...*/

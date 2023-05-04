@@ -1,15 +1,18 @@
-section_of_apps_for_buying_tickets_for_movement
+subject_domain_of_apps_for_buying_tickets_for_movement
 
-=>nrel_main_idtf:[Раздел. Приложения для покупок билетов для передвижения]
+=>nrel_main_idtf:[Предметная область. Приложения для покупок билетов для передвижения]
     (*
          <-lang_ru;;
     *);
-=>nrel_main_idtf:[Section. Apps buying tickets for movement]
+=>nrel_main_idtf:[Subject domain. Apps buying tickets for movement]
     (*
          <-lang_en;;
     *);
-<-non_atomic_section;; /*При декомпозиции удалить 2 запятую*/
+<-subject_domain;
 
-/*=> nrel_section_decomposition:	
-concept;
-concept;;*/
+->rrel_maximum_studied_object_class:
+    concept_apps_for_buying_tickets_for_movement_examples;;
+
+/*-> rrel_explored_relation:
+    ...
+    ...*/

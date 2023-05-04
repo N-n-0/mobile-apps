@@ -1,4 +1,4 @@
-concept_kolobike
+kolobike
 
 =>nrel_main_idtf:[Приложениe для аренды велосипедов Kolobike]
     (*
@@ -8,7 +8,7 @@ concept_kolobike
     (*
          <-lang_en;;
     *);
-<-section_of_app_for_bike_rental;
+
 
     <- rrel_key_sc_element: ... (*
         <- illustration;;

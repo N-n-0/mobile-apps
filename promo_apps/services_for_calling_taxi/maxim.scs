@@ -1,6 +1,6 @@
-concept_maxim 
+maxim 
     => nrel_main_idtf: [Сервис для заказа такси "Maxim"] (* <-lang_ru;;*);
-    <-section_of_services_for_calling_taxi;
+    => nrel_main_idtf: [Service for calling taxi "Maxim"] (* <-lang_en;;*);
 
     <- rrel_key_sc_element: ... (*
         <- illustration;;
