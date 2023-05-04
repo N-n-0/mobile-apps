@@ -1,9 +1,12 @@
-section_of_casual_games
-    =>nrel_main_idtf:[Раздел. Казуальные игры] (* <-lang_ru;;*);
-    =>nrel_main_idtf:[Section. Casual games] (* <-lang_en;;*);
+subject_domain_of_casual_games
+    =>nrel_main_idtf:[Предметная область. Казуальные игры] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Subject domain. Casual games] (* <-lang_en;;*);
 
-<-atomic_section;; /*При декомпозиции удалить 2 запятую*/
+<-subject_domain;;
 
-/*=> nrel_section_decomposition:	
-concept;
-concept;;*/
+->rrel_maximum_studied_object_class:
+    concept_casual_games_examples;
+
+/*-> rrel_explored_relation:
+    ...
+    ...*/

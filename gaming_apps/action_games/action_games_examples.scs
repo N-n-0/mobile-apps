@@ -1,0 +1,11 @@
+concept_action_games_examples
+=> nrel_main_idtf:
+    [Мобильные экшн игры]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Mobile action games]
+    (* <- lang_en;; *);
+
+->standoff_2;
+->mortal_kombat;
+->super_mario;;

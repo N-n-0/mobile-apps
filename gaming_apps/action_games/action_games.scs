@@ -1,13 +1,11 @@
-section_of_action_games
-    =>nrel_main_idtf:[Раздел. Экшн-игры] (* <-lang_ru;;*);
-    =>nrel_main_idtf:[Section. Action games] (* <-lang_en;;*);
+subject_domain_of_action_games
+    =>nrel_main_idtf:[Предметная область. Экшн-игры] (* <-lang_ru;;*);
+    =>nrel_main_idtf:[Subject domain. Action games] (* <-lang_en;;*);
 
-<-non_atomic_section;
+<-subject_domain;
 
-=> nrel_section_decomposition:
-    concept_standoff_2;
-    concept_mortal_kombat;
-    concept_super_mario;
+-> rrel_maximum_studied_object_class:
+    concept_action_games_examples;
 
 ->rrel_explored_relation:
     nrel_graphic;

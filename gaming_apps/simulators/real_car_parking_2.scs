@@ -1,8 +1,10 @@
-concept_rcp2
+rcp2
     => nrel_main_idtf:
         [Симулятор управления автомобилем Real Car Parking 2]
         (* <- lang_ru;; *);
-    <-subject_domain_of_simulators;
+    => nrel_main_idtf:
+        [Driving simulator Real Car Parking 2]
+        (* <- lang_ru;; *);
 
     <- rrel_key_sc_element: ... (*
         <- illustration;;

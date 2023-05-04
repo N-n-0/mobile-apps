@@ -1,0 +1,10 @@
+concept_simulator_games_examples
+=> nrel_main_idtf:
+    [Мобильные симуляторы]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Mobile simulators]
+    (* <- lang_en;; *);
+
+->WOT_blitz;
+->rcp2;;

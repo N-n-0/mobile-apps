@@ -1,8 +1,10 @@
-concept_WOT_blitz
+WOT_blitz
     => nrel_main_idtf:
         [Симулятор танковых баталлий World Of Tanks blitz]
         (* <- lang_ru;; *);
-    <-concept;
+    => nrel_main_idtf:
+        [Tank battle simulator World Of Tanks blitz]
+        (* <- lang_en;; *);
 
     <- rrel_key_sc_element: ... (*
         <- illustration;;

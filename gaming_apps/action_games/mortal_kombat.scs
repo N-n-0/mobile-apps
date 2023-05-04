@@ -1,8 +1,10 @@
-concept_mortal_kombat
+mortal_kombat
 => nrel_main_idtf:
     [Файтинг Mortal Kombat Mobile]
     (* <- lang_ru;; *);
-    <-concept;
+=> nrel_main_idtf:
+    [Fighting Mortal Kombat Mobile]
+    (* <- lang_en;; *);
 
     <- rrel_key_sc_element: ... (*
         <-illustration;;
