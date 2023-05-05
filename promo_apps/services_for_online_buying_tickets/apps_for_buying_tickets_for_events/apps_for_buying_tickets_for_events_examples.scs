@@ -4,6 +4,6 @@ concept_apps_for_buying_tickets_for_events_examples
     (* <- lang_ru;; *);
 => nrel_main_idtf:
     [Mobile apps for buying tickets for events]
-    (* <- lang_en;; *);; //убрать одну ;
+    (* <- lang_en;; *);; /*убрать одну ;*/
     
-//->название приложения;
+/*->название приложения;*/

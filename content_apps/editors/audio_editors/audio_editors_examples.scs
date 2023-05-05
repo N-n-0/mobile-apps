@@ -1,9 +1,9 @@
-concept_arcade_games_examples
+concept_of_audio_editors
 => nrel_main_idtf:
-    [Мобильные аркадные игры]
+    [Аудиоредакторы]
     (* <- lang_ru;; *);
 => nrel_main_idtf:
-    [Mobile arcade games]
+    [Audio editors]
     (* <- lang_en;; *);; /*убрать одну ;*/
     
 /*->название приложения;*/

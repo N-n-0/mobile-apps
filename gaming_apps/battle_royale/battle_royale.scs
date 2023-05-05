@@ -2,10 +2,10 @@ subject_domain_of_battle_royale
     =>nrel_main_idtf:[Предметная область. Battle Royale] (* <-lang_ru;;*);
     =>nrel_main_idtf:[Subject domain. Battle Royale] (* <-lang_en;;*);
 
-<-subject_domain;;
+<-subject_domain;
 
 ->rrel_maximum_studied_object_class:
-    concept_battle_royale_examples;
+    concept_battle_royale_examples;;
 
 /*-> rrel_explored_relation:
     ...

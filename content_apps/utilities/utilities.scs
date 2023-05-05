@@ -1,12 +1,12 @@
-section_of_utilities
+subject_domain_of_utilities
     =>nrel_main_idtf:[Раздел. Утилиты] (* <-lang_ru;;*);
-    =>nrel_main_idtf:[Section. Utilities] (* <-lang_en;;*);
+    =>nrel_main_idtf:[subject_domain. Utilities] (* <-lang_en;;*);
 
-<-not_atomic_section;
+<-subject_domain;
 
-=>nrel_section_decomposition:
-    section_of_archivers;
-	section_of_delete_programs_and_files_apps;
-	section_of_program_optimization_apps;
-    section_of_program_recovery_apps;
-    section_of_viewers;;
+<=nrel_decomposition:
+    subject_domain_of_archivers;
+	subject_domain_of_delete_programs_and_files_apps;
+	subject_domain_of_program_optimization_apps;
+    subject_domain_of_program_recovery_apps;
+    subject_domain_of_viewers;;

@@ -33,3 +33,12 @@ nrel_use_of_personal_data
     [Use of personal data]
     (* <- lang_en;; *);
 <-sc_node_norole_relation;;
+
+rrel_place_of_registration
+=> nrel_main_idtf:
+    [Место регистрации]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Place of registration]
+    (* <- lang_en;; *);
+<-sc_node_role_relation;;

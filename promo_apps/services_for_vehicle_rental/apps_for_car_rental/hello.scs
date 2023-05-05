@@ -20,4 +20,20 @@ hello
         *);;
     *);
 
-    => nrel_car_park: section_hello_car_park;;
+    => nrel_car_park: section_hello_car_park;
+    -> rrel_developer: ZVEZDA_STOLITSY;
+    -> rrel_supported_platform: IOS;
+    -> rrel_supported_platform: Android;
+    ->rrel_supported_language: ru_language;
+    ->nrel_use_of_personal_data: use;;
+
+nrel_car_park
+=>nrel_main_idtf:[Автопарк]
+    (*
+         <-lang_ru;;
+    *);
+=>nrel_main_idtf:[Car park]
+    (*
+         <-lang_en;;
+    *);
+<-sc_node_norole_relation;;

@@ -1,9 +1,9 @@
-concept_arcade_games_examples
+concept_of_program_optimization_apps
 => nrel_main_idtf:
-    [Мобильные аркадные игры]
+    [Приложения для оптимизации программ]
     (* <- lang_ru;; *);
 => nrel_main_idtf:
-    [Mobile arcade games]
+    [Program optimization apps]
     (* <- lang_en;; *);; /*убрать одну ;*/
     
 /*->название приложения;*/

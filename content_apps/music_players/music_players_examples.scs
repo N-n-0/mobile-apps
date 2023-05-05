@@ -1,9 +1,9 @@
-concept_arcade_games_examples
+concept_of_music_players
 => nrel_main_idtf:
-    [Мобильные аркадные игры]
+    [Музыкальные плееры]
     (* <- lang_ru;; *);
 => nrel_main_idtf:
-    [Mobile arcade games]
+    [Music plaeyrs]
     (* <- lang_en;; *);; /*убрать одну ;*/
     
 /*->название приложения;*/

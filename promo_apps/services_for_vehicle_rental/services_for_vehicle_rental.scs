@@ -10,7 +10,7 @@ subject_domain_of_services_for_vehicle_rental
     *);
 <-subject_domain;
 
-=> nrel_decomposition:
+<= nrel_decomposition:
     subject_domain_of_app_for_bike_rental;
 	subject_domain_of_app_for_car_rental;
     subject_domain_of_app_for_electro_scooter_rental;;

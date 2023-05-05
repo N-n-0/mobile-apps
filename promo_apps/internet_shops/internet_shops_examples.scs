@@ -4,6 +4,6 @@ concept_internet_shops_examples
     (* <- lang_ru;; *);
 => nrel_main_idtf:
     [Mobile internet shops]
-    (* <- lang_en;; *);; //убрать одну ;
+    (* <- lang_en;; *);; /*убрать одну ;*/
     
-//->название приложения;
+/*->название приложения;*/

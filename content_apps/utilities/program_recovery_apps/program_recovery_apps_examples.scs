@@ -1,9 +1,9 @@
-concept_arcade_games_examples
+concept_of_program_recovery_apps
 => nrel_main_idtf:
-    [Мобильные аркадные игры]
+    [Приложения для восстановления программ]
     (* <- lang_ru;; *);
 => nrel_main_idtf:
-    [Mobile arcade games]
+    [ Program recovery apps]
     (* <- lang_en;; *);; /*убрать одну ;*/
     
 /*->название приложения;*/

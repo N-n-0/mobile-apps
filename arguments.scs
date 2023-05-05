@@ -17,6 +17,54 @@ YandexLLC
         *);;
     *);;
 
+ZVEZDA_STOLITSY
+=> nrel_main_idtf:
+    [Звезда Столицы]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [ZVEZDA STOLITSY]
+    (* <- lang_en;; *);
+<-rrel_place_of_registration: Minsk;
+<- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение] (* <-lang_ru;; *);;
+        => nrel_idtf: [Definition] (* <-lang_en;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Молодая компания, которая лишь набирает обороты в отрасли информационных технологий, чьё головное юридическое лицо зарегистрировано в городе Минске, разработавшая только одно приложение - Hello  ] 
+            (* <-lang_ru;; *);;
+            -> rrel_example: [A young company that is just gaining momentum in the information technology industry, whose parent legal entity is registered in the city of Minsk, which has developed only one application - Hello]
+            (* <-lang_en;;*);;
+        *);;
+    *);;
+
+Multimotors
+=> nrel_main_idtf:
+    [Multimotors]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Multimotors]
+    (* <- lang_en;; *);
+<-rrel_place_of_registration: Minsk;
+<- rrel_key_sc_element: ... (*
+        <- definition;;
+        => nrel_idtf: [Определение] (* <-lang_ru;; *);;
+        => nrel_idtf: [Definition] (* <-lang_en;; *);;
+        <= nrel_sc_text_translation: ... (*
+            -> rrel_example: [ Компания, специализирующаяся на аренде и лизинге легковых автомобилей и грузовых автомобилей малой грузоподъемности. Компания хорошо себя зарекомендовала и пользуется спросом. Головное юридическое лицо находится в городе Минске и зарегистрировано в 2022 году. Выпустила свое предложение для каршеринга под таким же названием, что и сама компания] 
+            (* <-lang_ru;; *);;
+            -> rrel_example: [A company specializing in the rental and leasing of passenger cars and light-duty trucks. The company has proven itself well and is in demand. The head legal entity is located in the city of Minsk and was registered in 2022. Has released its offer for carsharing under the same name as the company itself]
+            (* <-lang_en;;*);;
+        *);;
+    *);;
+
+Minsk
+=> nrel_main_idtf:
+    [Минск]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Minsk]
+    (* <- lang_en;; *);;
+
 unknown
 => nrel_main_idtf:
     [Неизвестен]
@@ -63,12 +111,21 @@ Android
         *);;
     *);;
 
+
 all_language
 => nrel_main_idtf:
     [Все языки]
     (* <- lang_ru;; *);
 => nrel_main_idtf:
     [All language]
+    (* <- lang_en;; *);;
+
+ru_language
+=> nrel_main_idtf:
+    [Русский язык]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf:
+    [Russian language]
     (* <- lang_en;; *);;
 
 use

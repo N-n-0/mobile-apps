@@ -19,5 +19,9 @@ multimotors
             *);;
         *);;
     *);
-
+    -> rrel_developer: Multimotors;
+    -> rrel_supported_platform: IOS;
+    -> rrel_supported_platform: Android;
+    ->rrel_supported_language: ru_language;
+    ->nrel_use_of_personal_data: use;
     => nrel_car_park: section_multimotors_car_park;;

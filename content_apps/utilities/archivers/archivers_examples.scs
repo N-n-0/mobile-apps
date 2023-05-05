@@ -1,9 +1,9 @@
-concept_arcade_games_examples
+concept_of_archivers
 => nrel_main_idtf:
-    [Мобильные аркадные игры]
+    [Архиваторы]
     (* <- lang_ru;; *);
 => nrel_main_idtf:
-    [Mobile arcade games]
+    [Archivers]
     (* <- lang_en;; *);; /*убрать одну ;*/
     
 /*->название приложения;*/

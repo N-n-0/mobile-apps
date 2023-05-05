@@ -1,9 +1,9 @@
-concept_arcade_games_examples
+concept_of_text_editors
 => nrel_main_idtf:
-    [Мобильные аркадные игры]
+    [Текстовые редакторы]
     (* <- lang_ru;; *);
 => nrel_main_idtf:
-    [Mobile arcade games]
+    [Text editors]
     (* <- lang_en;; *);; /*убрать одну ;*/
     
 /*->название приложения;*/

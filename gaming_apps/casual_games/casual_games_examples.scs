@@ -4,6 +4,6 @@ concept_casual_games_examples
     (* <- lang_ru;; *);
 => nrel_main_idtf:
     [Mobile casual games]
-    (* <- lang_en;; *);; //убрать одну ;
+    (* <- lang_en;; *);; /*убрать одну ;*/
     
-//->название приложения;
+/*->название приложения;*/

@@ -1,10 +1,18 @@
-section_of_program_recovery_apps
-    =>nrel_main_idtf:[Раздел. Приложения для восстановления программ] (* <-lang_ru;;*);
-    =>nrel_main_idtf:[Section. Program recovery apps] (* <-lang_en;;*);
+subject_domain_of_program_recovery_apps
 
-<-atomic_section;;/*При декомпозиции удалить 2 запятую*/
+=>nrel_main_idtf:[Предметная область. Приложения для восстановления программ]
+    (*
+         <-lang_ru;;
+    *);
+=>nrel_main_idtf:[Subject domain. Program recovery apps]
+    (*
+         <-lang_en;;
+    *);
+<-subject_domain;
 
-/*=> nrel_section_decomposition:	
-concept;
-concept;;*/
+->rrel_maximum_studied_object_class:
+    concept_of_program_recovery_apps;;
 
+/*-> rrel_explored_relation:
+    ...
+    ...*/

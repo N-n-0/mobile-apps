@@ -1,9 +1,9 @@
-concept_arcade_games_examples
+concept_books_references_examples
 => nrel_main_idtf:
-    [Мобильные аркадные игры]
+    [Книги и справочники]
     (* <- lang_ru;; *);
 => nrel_main_idtf:
-    [Mobile arcade games]
+    [Books and referances]
     (* <- lang_en;; *);; /*убрать одну ;*/
     
 /*->название приложения;*/

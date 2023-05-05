@@ -1,9 +1,9 @@
-concept_arcade_games_examples
+concept_apps_for_health_examples
 => nrel_main_idtf:
-    [Мобильные аркадные игры]
+    [Мобильные приложения для здоровья]
     (* <- lang_ru;; *);
 => nrel_main_idtf:
-    [Mobile arcade games]
+    [Mobile apps for health]
     (* <- lang_en;; *);; /*убрать одну ;*/
     
 /*->название приложения;*/

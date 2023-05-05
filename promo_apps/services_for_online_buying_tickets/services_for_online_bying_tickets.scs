@@ -10,7 +10,7 @@ subject_domain_of_services_for_online_buying_tickets
     *);
 <-subject_domain;
 
-=> nrel_decomposition:	
+<= nrel_decomposition:	
     subject_domain_of_apps_for_buying_tickets_for_events; 
     subject_domain_of_apps_for_buying_tickets_for_movement; 
     subject_domain_of_apps_for_hotel_reservation;;

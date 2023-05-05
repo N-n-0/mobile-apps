@@ -1,7 +1,13 @@
 yandex_go 
     => nrel_main_idtf: [Сервис для заказа такси "YandexGo"] (* <-lang_ru;;*);
     => nrel_main_idtf: [Service for calling taxi "YandexGo"] (* <-lang_en;;*);
-
+    => nrel_have_autopark: section_yandex_go_autopark;
+    => nrel_tariff: section_yandex_go_tariff;
+    -> rrel_developer: YandexLLC;
+    -> rrel_supported_platform: IOS;
+    -> rrel_supported_platform: Android;
+    ->rrel_supported_language: all_language;
+    ->nrel_use_of_personal_data: use;
     <- rrel_key_sc_element: ... (*
         <- illustration;;
         <= nrel_sc_text_translation: ... (*
@@ -10,13 +16,4 @@ yandex_go
                 => nrel_format: format_jpg;;
             *);;
         *);;
-    *);
-
-
-    => nrel_have_autopark: section_yandex_go_autopark;
-    => nrel_tariff: section_yandex_go_tariff;
-    -> rrel_developer: YandexLLC;
-    -> rrel_supported_platform: IOS;
-    -> rrel_supported_platform: Android;
-    ->rrel_supported_language: all_language;
-    ->nrel_use_of_personal_data: use;;
+    *);;

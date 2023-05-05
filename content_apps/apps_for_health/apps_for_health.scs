@@ -1,15 +1,18 @@
-section_of_apps_for_health
+subject_domain_of_apps_for_health
 
-=>nrel_main_idtf:[Раздел. Приложения для здоровья]
+=>nrel_main_idtf:[Предметная область. Приложения для здоровья]
     (*
          <-lang_ru;;
     *);
-=>nrel_main_idtf:[Section. Apps for health]
+=>nrel_main_idtf:[Subject domain. Apps for health]
     (*
          <-lang_en;;
     *);
-<-atomic_section;; /*При декомпозиции удалить 2 запятую*/
+<-subject_domain;
 
-/*=> nrel_section_decomposition:	
-concept;
-concept;;*/
+-> rrel_maximum_studied_object_class:
+    concept_apps_for_health_examples;;
+
+/*-> rrel_explored_relation:
+    ...
+    ...*/

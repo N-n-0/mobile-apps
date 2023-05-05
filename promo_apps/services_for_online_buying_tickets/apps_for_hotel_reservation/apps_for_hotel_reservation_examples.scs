@@ -4,6 +4,6 @@ concept_apps_for_hotel_reservation_examples
     (* <- lang_ru;; *);
 => nrel_main_idtf:
     [Mobile apps for hotel reservation]
-    (* <- lang_en;; *);; //убрать одну ;
+    (* <- lang_en;; *);; /*убрать одну ;*/
     
-//->название приложения;
+/*->название приложения;*/
